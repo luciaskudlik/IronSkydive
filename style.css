@@ -6,6 +6,12 @@ body {
   padding: 0;
 }
 
+/*changing the default box-model used by the browser
+* {
+  box-sizing: border-box;
+}
+*/
+
 body {
   font-family: Roboto;
   font-size: 10px;
@@ -62,6 +68,8 @@ h5 {
 .nav-bar-ul {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-bar-ul li {
@@ -82,6 +90,7 @@ h5 {
   background-size: cover;
   height: 650px;
   padding-top: 50px;
+  position: relative;
 }
 
 .header h2 {
@@ -91,6 +100,28 @@ h5 {
 
 .quote {
   font-size: 2.5em;
+  position: absolute;
+  left: 10%;
+  bottom: 100px;
+}
+
+#general-information {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#general-information .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+}
+
+#structure > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .dark-background {
@@ -120,6 +151,7 @@ h5 {
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
+  padding: 10px 30px;
 }
 
 .service-box {
@@ -168,6 +200,18 @@ h5 {
   height: 180px;
 }
 
+#team > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#team > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .schedule-table {
   margin: 0 auto 40px auto;
   font-size: 1.5em;
@@ -185,6 +229,9 @@ td {
   font-size: 1.9em;
   padding: 40px 100px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .address {
@@ -201,4 +248,9 @@ td {
 .footer ul {
   list-style: none;
   padding: 0;
+}
+
+.map-frame {
+  height: 375px;
+  width: 60%;
 }
